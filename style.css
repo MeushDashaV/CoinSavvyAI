@@ -74,7 +74,6 @@ ul {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 50px 0;
 }
 
 .title {
@@ -84,6 +83,7 @@ ul {
   font-weight: 700;
   text-align: center;
   padding-bottom: 40px;
+  padding-top: 50px;
 }
 
 /* header */
@@ -425,7 +425,10 @@ ul {
 /* faq */
 
 /* photo text */
-
+.computacion-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .photo-text {
   display: flex;
   align-items: center;
@@ -459,6 +462,7 @@ ul {
   color: var(--color-base-light);
   text-align: center;
   margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 .title.form-title {
