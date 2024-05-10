@@ -63,3 +63,56 @@ window.onload = function () {
       autoPlayCarousel();
     });
 };
+
+
+
+
+   const videoBlocks = document.querySelectorAll('.video_block');
+   let currentIndex = 0;
+
+   const showVideo = index => {
+     videoBlocks.forEach(block => block.classList.remove('show'));
+     videoBlocks[index].classList.add('show');
+   };
+
+   const autoplayCarousel = () => {
+     setInterval(() => {
+       currentIndex = (currentIndex + 1) % videoBlocks.length;
+       showVideo(currentIndex);
+     }, 5000); // Кожні 5 секунд
+   };
+
+autoplayCarousel();
+   
+
+
+
+//mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevBtnMob = document.querySelector(".prev-mob");
+  const nextBtnMob = document.querySelector(".next-mob");
+  const videoBlocksMob = document.querySelectorAll(".video_block-mob");
+  let currentSlideMob = 0;
+
+  function showSlideMob(n) {
+    videoBlocksMob.forEach(function (block) {
+      block.style.display = "none";
+    });
+    videoBlocksMob[n].style.display = "block";
+  }
+
+  function nextSlideMob() {
+    currentSlideMob = (currentSlideMob + 1) % videoBlocksMob.length;
+    showSlideMob(currentSlideMob);
+  }
+
+  function prevSlideMob() {
+    currentSlideMob =
+      (currentSlideMob - 1 + videoBlocksMob.length) % videoBlocksMob.length;
+    showSlideMob(currentSlideMob);
+  }
+
+  nextBtnMob.addEventListener("click", nextSlideMob);
+  prevBtnMob.addEventListener("click", prevSlideMob);
+});
