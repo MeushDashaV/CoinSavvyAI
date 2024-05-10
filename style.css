@@ -872,6 +872,7 @@ hr {
 .photo-desc{
   order: 2;
   width: 360px;
+  height: auto;
   font-size: 14px;
   line-height: 1.6;
     margin: -50px 0 0 0;
