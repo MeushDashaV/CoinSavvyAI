@@ -303,7 +303,9 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-
+.solution-accent{
+  color: var(--color-base-orange);
+}
 .solusion-block {
   display: flex;
   gap: 132px;
@@ -688,6 +690,10 @@ hr {
 }
 
 @media (max-width: 768px) {
+.container{
+  padding: 0 20px 0 20px;
+}
+
   .header-container {
     height: 59px;
   }
@@ -770,10 +776,10 @@ hr {
 .group-article-problema {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 0;
 }
 .article-problema {
-  width: 320px;
+  width: 360px;
   height: auto;
 }
 
@@ -795,7 +801,7 @@ hr {
 .solusion-block {
   display: flex;
   flex-direction: column;
-  padding: 0 20px ;
+  padding: 0;
   gap: 20px;
   background-color: transparent;
 }
@@ -865,7 +871,7 @@ hr {
 
 .photo-desc{
   order: 2;
-  width: 300px;
+  width: 360px;
   font-size: 14px;
   line-height: 1.6;
     margin: -50px 0 0 0;
@@ -878,7 +884,7 @@ hr {
 }
 
 .photo-lamp{
-  width: 300px;
+  width: 360px;
 }
 
 
