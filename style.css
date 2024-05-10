@@ -682,6 +682,11 @@ hr {
   display: none;
 }
 
+.img-man-l-mob,
+.img-man-right-mob {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header-container {
     height: 59px;
@@ -765,6 +770,7 @@ hr {
 .group-article-problema {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 .article-problema {
   width: 320px;
@@ -831,8 +837,9 @@ hr {
 .img-man-l-mob,
 .img-man-right-mob{
   display: block;
-  width: 320px;
+  width: 360px;
   z-index: -10;
+ 
 }
 
 
@@ -841,7 +848,7 @@ hr {
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
-  width: 320px;
+  width: 360px;
   padding: 20px;
 }
 
