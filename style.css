@@ -387,6 +387,7 @@ ul {
   align-items: center;
 }
 
+
 /* man section */
 
 .man-block {
@@ -443,17 +444,14 @@ hr {
   margin-bottom: 30px;
 }
 
-
-
-
 .accordion-content {
   color: var(--color-base-light);
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
   margin-bottom: 30px;
-max-height: 0;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease; /* Додано перехід */
 }
@@ -463,12 +461,10 @@ max-height: 0;
   max-height: 1000px; /* Початкове значення для анімації */
 }
 
-
-
 .accordion-header {
   color: var(--color-base-light);
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24.38px;
@@ -476,8 +472,6 @@ max-height: 0;
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .arrow-svg-top,
 .arrow-svg-bottom {
@@ -492,7 +486,6 @@ max-height: 0;
 .arrow-svg-bottom.active {
   display: none;
 }
-
 
 /* photo text */
 .computacion-section {
@@ -526,6 +519,33 @@ max-height: 0;
 /* form */
 .form-section {
   background-color: var(--color-base-dark);
+  position: relative;
+}
+
+.form-section::before {
+  position: absolute;
+  content: '';
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 524px;
+  width: 470px;
+  background-image: url(./img/form-left.svg);
+  background-position: center;
+  bottom: 0;
+  left: 250px;
+}
+
+.form-section::after {
+  position: absolute;
+  content: '';
+  height: 636px;
+  width: 570px;
+  background-image: url(./img/form-right.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  bottom: 0;
+  right: 150px;
 }
 
 .text-form {
@@ -578,6 +598,34 @@ max-height: 0;
   font-weight: 400;
   line-height: 1.2;
   background-color: var(--color-base-light);
+}
+
+
+.let {
+height: 625px;
+}
+
+.let-frame {
+  border: 1px solid var(--color-base-light);
+  border-radius: 40px;
+  width: 570px;
+  height: 393px;
+  margin-top: 107px;
+}
+
+.icon-chek {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.let-text {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-base-light);
+  text-align: center;
+  gap: 20px;
 }
 /* footer */
 .footer {
