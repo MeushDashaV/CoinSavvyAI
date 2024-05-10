@@ -116,7 +116,6 @@ ul {
   background-position: center top;
   background-size: cover;
   position: relative;
-  z-index: 100;
 }
 
 .hero-section::before,
@@ -125,6 +124,8 @@ ul {
   content: '';
   background-size: 100%;
   background-repeat: no-repeat;
+
+  animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 
 .hero-section::before {
@@ -209,6 +210,8 @@ ul {
   width: 570px;
   height: 322px;
   margin-bottom: 40px;
+
+  z-index: 1;
 }
 
 .group-hero {
@@ -236,6 +239,8 @@ ul {
   background-position: right 550px top;
   background-repeat: no-repeat;
   background-size: 370px 431px;
+
+  
 }
 
 .group-article-problema::before,
@@ -245,7 +250,11 @@ ul {
   background-size: 100%;
   background-repeat: no-repeat;
   bottom: 0;
+
+  animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
+
+
 
 .group-article-problema::before {
   background-image: url(./img/vect-problem1.png);
@@ -312,6 +321,8 @@ ul {
   background-image: url(./img/bcg-solucion.png);
   width: 353px;
   height: 342px;
+
+  animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 
 .solucion-item {
@@ -533,6 +544,20 @@ hr {
   background-position: center;
   bottom: 0;
   left: 250px;
+
+  animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes pulseBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .form-section::after {
@@ -546,7 +571,13 @@ hr {
   background-position: right;
   bottom: 0;
   right: 150px;
+
+  animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
+
+
+
+
 
 .text-form {
   color: var(--color-base-light);
