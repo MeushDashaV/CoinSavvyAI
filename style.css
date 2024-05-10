@@ -819,8 +819,35 @@ hr {
   display: flex;
   flex-direction: column;
 }
+.man-text-first {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.img-man-l {
+  display: none;
+}
+
+.img-man-l-mob,
+.img-man-right-mob{
+  display: block;
+  width: 320px;
+  z-index: -10;
+}
 
 
+.man-text-frame,
+.man-text-frame-next {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  width: 320px;
+  padding: 20px;
+}
+
+.img-man-right {
+  display: none;
+}
 
 .photo-text {
   display: flex;
