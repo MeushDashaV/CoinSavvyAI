@@ -111,7 +111,7 @@ ul {
 .hero-section {
   padding: 82px 0 0 0;
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-    url('/img/hero-section-robot.jpg');
+    url('./img/hero-section-robot.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -128,13 +128,13 @@ ul {
 }
 
 .hero-section::before {
-  background-image: url('/img/bcg-hero-1.png');
+  background-image: url('./img/bcg-hero-1.png');
   width: 324px;
   height: 669px;
 }
 
 .hero-section::after {
-  background-image: url('/img/bcg-hero-2.png');
+  background-image: url('./img/bcg-hero-2.png');
   width: 541px;
   height: 841px;
   right: 0;
