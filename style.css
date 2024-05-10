@@ -820,4 +820,49 @@ hr {
   flex-direction: column;
 }
 
+
+
+.photo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.photo-desc{
+  order: 2;
+  width: 300px;
+  font-size: 14px;
+  line-height: 1.6;
+    margin: -50px 0 0 0;
+    padding: 20px;
+}
+
+.photo-desc p {
+    font-size: 14px;
+  line-height: 1.6;
+}
+
+.photo-lamp{
+  width: 300px;
+}
+
+
+.form-section::before,
+.form-section::after {
+  display: none;
+}
+
+.form {
+  width: 360px;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid var(--color-base-light);
+}
+
+.form-input{
+  width: 320px;
+  height: 48px;
+}
+
 }
