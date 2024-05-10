@@ -116,6 +116,7 @@ ul {
   background-position: center top;
   background-size: cover;
   position: relative;
+  z-index: 100;
 }
 
 .hero-section::before,
@@ -424,6 +425,75 @@ ul {
 
 /* faq */
 
+.faq-section {
+  background-color: var(--color-base-dark);
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.title.title-FAQ {
+  color: var(--color-base-light);
+}
+
+hr {
+  border: none;
+  background-color: var(--color-base-light);
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.accordion-content {
+  color: var(--color-base-light);
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 30px;
+max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Додано перехід */
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  max-height: 1000px; /* Початкове значення для анімації */
+}
+
+
+
+.accordion-header {
+  color: var(--color-base-light);
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.38px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.arrow-svg-top,
+.arrow-svg-bottom {
+  display: none;
+}
+
+.arrow-svg-top.active,
+.arrow-svg-bottom.active {
+  display: inline-block;
+}
+
+.arrow-svg-bottom.active {
+  display: none;
+}
+
+
 /* photo text */
 .computacion-section {
   margin-top: 100px;
@@ -474,16 +544,21 @@ ul {
   margin: auto;
 }
 .form {
-  padding-top: 50px;
   padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   border: 1px solid var(--color-border);
   border-radius: 20px;
   width: 470px;
+
+  margin-bottom: 50px;
+}
+
+.form-inputs-all {
+  display: flex;
   gap: 29px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-label {
@@ -506,6 +581,7 @@ ul {
 }
 /* footer */
 .footer {
+  padding: 40px 0 50px 0;
   border-top: 1px solid var(--color-border);
   background-color: var(--color-base-dark);
 }
