@@ -124,7 +124,6 @@ ul {
   content: '';
   background-size: 100%;
   background-repeat: no-repeat;
-
   animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 
@@ -239,8 +238,6 @@ ul {
   background-position: right 550px top;
   background-repeat: no-repeat;
   background-size: 370px 431px;
-
-  
 }
 
 .group-article-problema::before,
@@ -253,8 +250,6 @@ ul {
 
   animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
-
-
 
 .group-article-problema::before {
   background-image: url(./img/vect-problem1.png);
@@ -397,7 +392,6 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
 
 /* man section */
 
@@ -575,10 +569,6 @@ hr {
   animation: pulseBackground 5s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
 }
 
-
-
-
-
 .text-form {
   color: var(--color-base-light);
   text-align: center;
@@ -631,9 +621,8 @@ hr {
   background-color: var(--color-base-light);
 }
 
-
 .let {
-height: 625px;
+  height: 625px;
 }
 
 .let-frame {
